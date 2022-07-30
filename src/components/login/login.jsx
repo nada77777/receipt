@@ -22,8 +22,6 @@ const Login = ({ loginService }) => {
         const userId = user;
       if(userId){
         navigate('/maker',{state: {id: userId}});
-      }else{
-        return;
       }
     };
 
