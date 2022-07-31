@@ -1,14 +1,21 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
 class AuthService {
-
-
-    login(){
-        const auth = getAuth();
-        const provider = new GoogleAuthProvider();
-        return signInWithPopup(auth, provider);
+    constructor(){
+        this.auth = getAuth();
     }
 
+    login(){
+        const provider = new GoogleAuthProvider();
+        return signInWithPopup(this.auth, provider);
+    }
+
+    
+    authChanged(callback){
+        onAuthStateChanged(this.auth, (user) => {
+            callback(user);
+        });
+    };
 
 
 

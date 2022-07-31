@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 const Login = ({ loginService }) => {
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     goTo();
-    // });
+    useEffect(() => {
+        loginService.authChanged(user => { user && goTo(user.uid)});
+    });
 
 
     const click = (event) => {
@@ -30,8 +30,8 @@ const Login = ({ loginService }) => {
             <Header/>
             <div className={styles.container}>
                 <h1 className={styles.h1}>Login</h1>
-                <button onClick={click}>Google</button>
-                <button onClick={click}>Github</button>
+                <button className={styles.button} onClick={click}>Google</button>
+                <button className={styles.button} onClick={click}>Github</button>
             </div>
             <Footer/>
         </div>
