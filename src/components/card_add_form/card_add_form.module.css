@@ -12,3 +12,10 @@ input, select {
 textarea {
     flex: 1 1 100%;
 }
+
+.imginput {
+    display: flex;
+    flex: 1 1 50%;
+    height: 100%;
+    background-color: blue;
+}
