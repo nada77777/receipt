@@ -1,0 +1,26 @@
+.chart_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.chart_bar_template {
+    position: relative;
+    width: 20px;
+    height: 200px;
+    background-color: wheat;
+}
+
+.chart_bar_fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    background-color: skyblue;
+}
+
+.month {
+    
+}

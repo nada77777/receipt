@@ -1,0 +1,23 @@
+.income_expense {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.div {
+background-color: antiquewhite;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+padding: 20px 80px;
+}
+
+.div:first-child {
+    border-right: 1px solid;
+}
