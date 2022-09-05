@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './income_expense.module.css';
-const IncomeExpense = (props) => {
+const IncomeExpense = ({ incomeAsset, expenseAsset }) => {
     return(
         <div className={styles.income_expense}>
             <div className={styles.div}>
-                <h3>수입</h3>
-                <p>11원</p>
+                <h3 className={styles.title}>수입</h3>
+                <p>{incomeAsset}원</p>
             </div>
             <div className={styles.div}>
-                <h3>지출</h3>
-                <p>0원</p>
+                <h3 className={styles.title}>지출</h3>
+                    <p>{expenseAsset}원</p>
             </div>
         </div>
     );

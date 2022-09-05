@@ -1,12 +1,22 @@
 .receipt_list {
-    border: 2px solid skyblue;
+ 
+}
+
+select {
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.receipt_list_inner {
+    text-align: center;
+    font-size: 14px;
 }
 
 .receipt_title {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid skyblue;
 }
 
 .history {
