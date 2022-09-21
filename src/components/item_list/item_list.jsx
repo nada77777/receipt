@@ -1,23 +1,18 @@
 import React from 'react';
-import { useEffect } from 'react';
 import styles from './item_list.module.css';
 
 
 
 
 
-const ItemList = ({ asset, deleteItem }) => {
-    const { date, title, price, type } = asset;
+const ItemList = ({ item, deleteItem }) => {
+    const { date, title, price, type } = item;
 
-            
-    // useEffect(() => {
-    //     itemFilter('2022');
-    //     console.log('itemlist mount');
-    // },[]);
+
 
 
     const onClick = () => {
-        deleteItem(asset);
+        deleteItem(item);
     }
 
     return(

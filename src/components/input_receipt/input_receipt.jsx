@@ -16,6 +16,7 @@ const InputReceipt = ({ addItem }) => {
     const onClick = () => {
         let item = {
             id: Date.now(),
+            year: yearRef.current.value.slice(0,4),
             date: yearRef.current.value,
             title: titleRef.current.value,
             price: priceRef.current.value,
